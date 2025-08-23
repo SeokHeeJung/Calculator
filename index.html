@@ -1,10 +1,48 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
+
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>뜩 계산기</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-$END$
+<h1>계산기</h1>
+<div class="calculator">
+    <input type="text" id="monitor" disabled>
+    <br>
+    <input type="text" id="monitor2" disabled>
+    <div class="buttons">
+        <button onclick="clearResult()" id="clearButton" class="clear">AC</button>
+        <button onclick="fix()" class="clear">+/-</button>
+        <button onclick="append('%')" class="clear">%</button>
+        <button onclick="append('/')" class="formula_button">÷</button>
+        <br>
+        <button onclick="append('7')" class="number_button">7</button>
+        <button onclick="append('8')" class="number_button">8</button>
+        <button onclick="append('9')" class="number_button">9</button>
+        <button onclick="append('*')" class="formula_button">×</button>
+        <br>
+        <button onclick="append('4')" class="number_button">4</button>
+        <button onclick="append('5')" class="number_button">5</button>
+        <button onclick="append('6')" class="number_button">6</button>
+        <button onclick="append('-')" class="formula_button">-</button>
+
+        <br>
+        <button onclick="append('1')" class="number_button">1</button>
+        <button onclick="append('2')" class="number_button">2</button>
+        <button onclick="append('3')" class="number_button">3</button>
+        <button onclick="append('+')" class="formula_button">+</button>
+        <br>
+        <button onclick="append('0')" class="number_button">⌨️</button>  // 계산기 메뉴-> 공학용 계산기, 간단한 계산기... 아직 미완성
+        <button onclick="append('0')" class="number_button">0</button>
+        <button onclick="append('.')" class="number_button">.</button>
+        <button onclick="calculate()" class="formula_button">=</button>
+
+    </div>
+</div>
+<script src="JS.js"></script>
 </body>
+
 </html>
